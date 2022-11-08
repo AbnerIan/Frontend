@@ -11,12 +11,17 @@
     <h1>Hello, world!</h1>
     <div class="container">
         <div class="row m-2">
-            <div class="col-sm-6 bg-primary p-3">hello</div>
+            <div class="col-sm-6 bg-primary p-3">
+              <div class="row">
+                <div class="col-md-6 bg-secondary">hola</div>
+                <div class="col-md-6 bg-info">mundo</div>
+              </div>
+            </div>
             <div class="col-sm-6 bg-danger p-3">world</div>
         </div>
         <div class="row ml-2">
-            <div class="col-sm-6 bg-primary d-flex justify-content-center">hello</div>
-            <div class="col-sm-6 bg-danger d-flex justify-content-center">world</div>
+            <div class="col-md-6 bg-primary d-flex justify-content-center">hello</div>
+            <div class="col-md-6 bg-danger d-flex justify-content-center">world</div>
         </div>
 
         <div class="row m-3">
@@ -26,15 +31,17 @@
 
         </div>
         <div class="row m-3">
-          <div class="col-lg-3 bg-success d-flex justify-content-center">hello</div>
-          <div class="col-lg-6 bg-warning d-flex justify-content-center">world</div>
-          <div class="col-lg-3 bg-info d-flex justify-content-center">bro</div>
+          <div class="col-xl-3 bg-success d-flex justify-content-center">hello</div>
+          <div class="col-xl-6 bg-warning d-flex justify-content-center">world</div>
+          <div class="col-xl-3 bg-info d-flex justify-content-center">bro</div>
 
         </div>
         <div class="row m-3">
           <div class="col-lg-3 bg-ligth d-flex justify-content-center">hello</div>
           <div class="col-lg-6 bg-dark d-flex justify-content-center">world</div>
-          <div class="col-lg-3 bg-info d-flex justify-content-center">bro</div>
+          <div class="col-lg-3 bg-info d-flex justify-content-center">
+            <a href="#" class="link-primary">bro</a>
+          </div>
 
         </div>
 
@@ -43,7 +50,144 @@
           <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
           <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
         </div>
+
+        <div class="row">
+
+        </div>
+
+
+
+        
     </div>
+
+    <div class="row">
+      <div class="col-4 text-truncate">
+        This text is quite long, and will be truncated once displayed.
+      </div>
+    </div>
+    
+    <!-- Inline level -->
+    <span class="d-inline-block text-truncate" style="max-width: 100px;">
+      This text is quite long, and will be truncated once displayed.
+    </span>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+
+    <ul class="nav justify-content-end m-2 bg-danger">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+
+
+    <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+      </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

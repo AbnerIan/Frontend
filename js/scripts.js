@@ -1,1 +1,1 @@
-alert("holaaa")
+console.log("holaaa")
