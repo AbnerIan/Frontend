@@ -1,9 +1,25 @@
+
 div{
-    background-color: #a1b5cb;
-
+    background-color: #0675a170;
 }
 
-app-social{
-    float: right;
-    margin-top: 25px;
+.links img{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
+.links img:hover{
+    width: 35px;
+    border-radius: 100%;
+}
+
+#logoAP{
+    width: 150px; 
+    margin-left:20px ; 
+}
+
+.boton{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
